@@ -3,8 +3,12 @@
 <span class="rz-bar-wrapper">
   <span class="rz-bar rz-selection" ng-style="barStyle"></span>
 </span> <!-- // 1 Highlight between two handles -->
-<span class="rz-pointer rz-pointer-min" ng-style=minPointerStyle></span> <!-- // 2 Left slider handle -->
-<span class="rz-pointer rz-pointer-max" ng-style=maxPointerStyle></span> <!-- // 3 Right slider handle -->
+<span class="rz-pointer rz-pointer-min" ng-style=minPointerStyle>
+  <svg class=\"icon-indicator-dims\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/images/sprite.svg#indicator\"></use></svg>
+</span> <!-- // 2 Left slider handle -->
+<span class="rz-pointer rz-pointer-max" ng-style=maxPointerStyle>
+  <svg class=\"icon-indicator-dims\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/images/sprite.svg#indicator\"></use></svg>
+</span> <!-- // 3 Right slider handle -->
 <span class="rz-bubble rz-limit rz-floor"></span> <!-- // 4 Floor label -->
 <span class="rz-bubble rz-limit rz-ceil"></span> <!-- // 5 Ceiling label -->
 <span class="rz-bubble"></span> <!-- // 6 Label above left slider handle -->
