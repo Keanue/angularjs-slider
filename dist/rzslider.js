@@ -70,6 +70,7 @@
       onChange: null,
       onEnd: null,
       rightToLeft: false,
+      downToUp: true,
       boundPointerLabels: true,
       mergeRangeLabelsIfSame: false,
       customTemplateScope: null
@@ -1275,6 +1276,7 @@
             labelVal = lowTr;
           } else {
             labelVal = this.options.rightToLeft ? highTr + ' - ' + lowTr : lowTr + ' - ' + highTr;
+            labelVal = (this.options.rightToLeft ||  this.options.downToUp) ? highTr + ' - ' + lowTr : lowTr + ' - ' + highTr;
           }
 
           this.translateFn(labelVal, this.cmbLab, 'cmb', false);
